@@ -1,0 +1,23 @@
+.posts_main_div{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    text-align: left;
+    margin-left: 4%;
+}
+.small_boxes{
+    border: 1px solid black;
+    width: 90%;
+    padding: 1%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+.body_arr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    padding: 1%;
+    border: 1px solid black;
+}

@@ -9,16 +9,16 @@ const SinglePost = () => {
 
     const [postBody, setPostBody] = useState([])
     const params = useParams();
-    const id = params.id;
+    let id = params.id;
 
     const fetchTheSinglePost = () =>{
-        axios.get(`http://localhost:8000/posts/${id}/start-with-a`) 
+        axios.get(`https://mighty-coast-34651.herokuapp.com/posts/${id}/start-with-a`) 
         .then((res)=>setPostBody(res.data))
         .catch((err)=>console.log(err))
     }
 
     const handleUpdateBody = () =>{
-        axios.get(`http://localhost:8000/posts/${id}/change-with-*`)
+        axios.get(`https://mighty-coast-34651.herokuapp.com/posts/${id}/change-with-*`)
         .then((res)=>console.log(res))
         .catch((err)=>console.log(err))
         fetchTheSinglePost()

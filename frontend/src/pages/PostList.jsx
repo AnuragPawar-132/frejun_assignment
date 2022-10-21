@@ -11,7 +11,7 @@ const PostList = () => {
     const navigate = useNavigate()
 
     const fetchThePostList = () =>{
-        axios.get("http://localhost:8000/posts")
+        axios.get("https://mighty-coast-34651.herokuapp.com/posts")
         .then((res)=>{setPostsList(res.data)})
         .catch((err)=>console.log(err))
     }

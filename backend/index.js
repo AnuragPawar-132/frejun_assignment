@@ -86,10 +86,6 @@ app.post("/create", async (req, res)=>{
     })
 })
 
-app.post("/posts", (req, res)=>{
-
-})
-
 app.listen(process.env.PORT, async ()=>{
     console.log("server started on 8000")
     try{
